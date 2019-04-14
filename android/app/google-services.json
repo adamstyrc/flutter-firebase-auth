@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "138337320581",
+    "firebase_url": "https://hobbmate-a9d7e.firebaseio.com",
+    "project_id": "hobbmate-a9d7e",
+    "storage_bucket": "hobbmate-a9d7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138337320581:android:bdde7ea5a06a0f82",
+        "android_client_info": {
+          "package_name": "app.hobbmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbW5FRtB-NOkIcWrRFSR49KqQbpycx84c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138337320581-665nc0t472sbqjs4rkmnseb99fervhoi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "138337320581-eag9mhp49ctsdcgbo36gi3th37he5vh6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.hobbmate"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138337320581:android:e71ac78c2f4bc32e",
+        "android_client_info": {
+          "package_name": "com.hobbmate.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138337320581-336gugopjrgoccv6mkuve001g31cnttq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hobbmate.app",
+            "certificate_hash": "e2aaa6450b12625cbbe93803c6d6d8b1ff64f809"
+          }
+        },
+        {
+          "client_id": "138337320581-d27qbm6e402ibial1msn0p6bqv7l60i7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hobbmate.app",
+            "certificate_hash": "547fd0b6a88a6c68e956533c4b15e122826148a7"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbW5FRtB-NOkIcWrRFSR49KqQbpycx84c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138337320581-665nc0t472sbqjs4rkmnseb99fervhoi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "138337320581-eag9mhp49ctsdcgbo36gi3th37he5vh6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.hobbmate"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
