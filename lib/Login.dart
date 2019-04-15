@@ -81,17 +81,21 @@ class LoginState extends State<Login> {
       ],
     );
 
-    GoogleSignInAccount googleSignInAccount = await _googleSignIn.signIn();
-    GoogleSignInAuthentication googleAuth = await googleSignInAccount.authentication;
+    try {
+      GoogleSignInAccount googleSignInAccount = await _googleSignIn.signIn();
+      GoogleSignInAuthentication googleAuth = await googleSignInAccount.authentication;
 
-    final AuthCredential credential = GoogleAuthProvider.getCredential(
-      accessToken: googleAuth.accessToken,
-      idToken: googleAuth.idToken,
-    );
+      final AuthCredential credential = GoogleAuthProvider.getCredential(
+        accessToken: googleAuth.accessToken,
+        idToken: googleAuth.idToken,
+      );
 
-    FirebaseUser firebaseUser = await FirebaseAuth.instance.signInWithCredential(credential);
-    if (firebaseUser != null) {
-      _goToNextScreen();
+      FirebaseUser firebaseUser = await FirebaseAuth.instance.signInWithCredential(credential);
+      if (firebaseUser != null) {
+        _goToNextScreen();
+      }
+    } on PlatformException catch (error) {
+      print(error);
     }
   }
 
@@ -115,6 +119,9 @@ class LoginState extends State<Login> {
         );
 
         FirebaseUser firebaseUser = await FirebaseAuth.instance.signInWithCredential(credential);
+        if (firebaseUser != null) {
+          _goToNextScreen();
+        }
     }
   }
 
