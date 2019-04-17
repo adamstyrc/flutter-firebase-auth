@@ -118,9 +118,13 @@ class LoginState extends State<Login> {
             accessToken: facebookLoginResult.accessToken.token
         );
 
-        FirebaseUser firebaseUser = await FirebaseAuth.instance.signInWithCredential(credential);
-        if (firebaseUser != null) {
-          _goToNextScreen();
+        try {
+          FirebaseUser firebaseUser = await FirebaseAuth.instance.signInWithCredential(credential);
+          if (firebaseUser != null) {
+                    _goToNextScreen();
+                  }
+        } on PlatformException catch (e) {
+          print(e);
         }
     }
   }
